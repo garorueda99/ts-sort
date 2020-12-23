@@ -1,3 +1,3 @@
-let message: string = "Hello World 2";
+let message: string = 'Hello World 3===>';
 
-console.log(message);
+console.log(message, 'hello');
