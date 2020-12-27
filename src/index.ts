@@ -1,7 +1,9 @@
 import { Sorter } from './Sorter';
+import { NumbersCollection } from './NumbersCollection';
 
 const array: number[] = [5, 0, 10, -1];
 console.log('this is the array to sort', array);
+const numbersCollection = new NumbersCollection([5, 0, 10, -1]);
 
 // function sort(array: number[]): number[] {
 //   for (let entry of array) {
@@ -12,7 +14,5 @@ console.log('this is the array to sort', array);
 
 // sort(array);
 
-const sorter = new Sorter(array);
-console.log('This is the obj ', sorter.collection);
-sorter.sort();
-console.log('This is the obj sorted', sorter.collection);
+numbersCollection.sort();
+console.log('This is the obj ', numbersCollection.data);

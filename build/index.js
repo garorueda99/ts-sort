@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Sorter_1 = require("./Sorter");
+var NumbersCollection_1 = require("./NumbersCollection");
 var array = [5, 0, 10, -1];
 console.log('this is the array to sort', array);
+var numbersCollection = new NumbersCollection_1.NumbersCollection([5, 0, 10, -1]);
 // function sort(array: number[]): number[] {
 //   for (let entry of array) {
 //     console.log('this is entry:', entry);
@@ -10,7 +11,5 @@ console.log('this is the array to sort', array);
 //   return [1];
 // }
 // sort(array);
-var sorter = new Sorter_1.Sorter(array);
-console.log('This is the obj ', sorter.collection);
-sorter.sort();
-console.log('This is the obj sorted', sorter.collection);
+numbersCollection.sort();
+console.log('This is the obj ', numbersCollection.data);
